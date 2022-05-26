@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo passwd ubuntu
+
 echo \"Criando usuário...\"
 sudo adduser quatro
 
