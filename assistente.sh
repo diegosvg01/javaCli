@@ -1,14 +1,16 @@
 #!/bin/bash
 
 echo \"Criando usuário...\"
-sudo adduser 01212182diego
+sudo adduser quatro
 
-sudo usermod -aG sudo 01212182diego
+sudo usermod -aG sudo quatro
 
-sudo su 01212182diego
+sudo su quatro
 
 echo \"Iniciando atualização dos pacotes...\"
 sudo apt update && sudo apt upgrade -y
+
+echo \"Baixando Java 11\"
 sudo apt install default-jre
 sudo apt instal openjdk-11-jre-headlwss
 
