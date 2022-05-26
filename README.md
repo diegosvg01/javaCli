@@ -1,3 +1,5 @@
+sudo docker exec -it ConteinerBD bash
+
 mysql -u root -p
 
 create database 4four;
