@@ -2,13 +2,6 @@
 
 sudo passwd ubuntu
 
-echo \"Criando usuário...\"
-sudo adduser quatro
-
-sudo usermod -aG sudo quatro
-
-sudo su quatro
-
 echo \"Iniciando atualização dos pacotes...\"
 sudo apt update && sudo apt upgrade -y
 
