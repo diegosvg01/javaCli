@@ -39,6 +39,9 @@ echo \"Você escolheu não instalar o docker\"
 fi
 fi
 
+az sql server show -n sql-server-name -g sql-server-group --query "publicNetworkAccess"
+z sql server update -n sql-server-name -g sql-server-group --set publicNetworkAccess="Disabled
+
 cat > Dockerfile <<EOF
 FROM openjdk:11
 WORKDIR /javaCli/
