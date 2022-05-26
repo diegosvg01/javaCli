@@ -41,8 +41,8 @@ fi
 
 cat > Dockerfile <<EOF
 FROM openjdk:11
-WORKDIR /Java/
-COPY executavel-quatro.jar /Java/
+WORKDIR /javaCli/
+COPY https://github.com/diegosvg01/javaCli.git /javaCli/
 CMD ["java","-jar","quatro-java-cli.jar"]
 EOF
 
