@@ -43,13 +43,13 @@ cat > Dockerfile <<EOF
 FROM openjdk:11
 WORKDIR /Java/
 COPY executavel-quatro.jar /Java/
-CMD ["java","-jar","executavel_quatro-jar"]
+CMD ["java","-jar","quatro-java-cli.jar"]
 EOF
 
-sudo docker build . -t executavel_quatro.jar
-sudo docker run -it executavel_quatro-jar
+sudo docker build . -t quatro-java-cli.jar
+sudo docker run -it quatro-java-cli.jar
 
-sudo docker exec -it executavel_quatro-jar bash
+sudo docker exec -it equatro-java-cli.jar bash
 
 sudo docker exec -it ContainerBD bash
 
