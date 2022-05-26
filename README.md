@@ -1,4 +1,4 @@
-sudo docker exec -it ConteinerBD bash
+sudo docker exec -it ContainerBD bash
 
 mysql -u root -p
 
