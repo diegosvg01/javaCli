@@ -1,18 +1,16 @@
 #!/bin/bash
 
-echo \"Criando usuário...\"
-sudo adduser quatro
-
-sudo usermod -aG sudo quatro
-
-sudo su quatro
+sudo passwd ubuntu
 
 echo \"Iniciando atualização dos pacotes...\"
 sudo apt update && sudo apt upgrade -y
 
+echo \"Instalando interface gráfica...\"
+sudo apt-get install xrdplxde-core lxde tigervnc-standalone-server -y
+
 echo \"Baixando Java 11\"
 sudo apt install default-jre
-sudo apt instal openjdk-11-jre-headlwss
+sudo apt install openjdk-11-jre-headlwss
 
 docker --version
 if [ $? -eq 0 ]
