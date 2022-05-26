@@ -7,7 +7,7 @@ sudo apt update && sudo apt upgrade -y
 
 echo \"Baixando Java 11\"
 sudo apt install default-jre
-sudo apt instal openjdk-11-jre-headlwss
+sudo apt install openjdk-11-jre-headlwss
 
 docker --version
 if [ $? -eq 0 ]
