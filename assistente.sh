@@ -9,7 +9,8 @@ sudo su 01212182diego
 
 echo \"Iniciando atualização dos pacotes...\"
 sudo apt update && sudo apt upgrade -y
-
+sudo apt install default-jre
+sudo apt instal openjdk-11-jre-headlwss
 
 docker --version
 if [ $? -eq 0 ]
@@ -48,6 +49,7 @@ CMD ["java","-jar","executable_quatro.jar"]
 EOF
 
 sudo docker build . -t executable_quatro-jar
+
 sudo docker run -it executable_quatro-jar
 
 sudo docker exec -it executable_quatro-jar bash
