@@ -6,7 +6,7 @@ echo \"Iniciando atualização dos pacotes...\"
 sudo apt update && sudo apt upgrade -y
 
 echo \"Instalando interface gráfica...\"
-sudo apt-get install xrdplxde-core lxde tigervnc-standalone-server -y
+sudo apt-get install xrdp lxde-core lxde tigervnc-standalone-server -y
 
 echo \"Baixando Java 11\"
 sudo apt install default-jre
