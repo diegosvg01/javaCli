@@ -10,7 +10,7 @@ sudo apt-get install xrdp lxde-core lxde tigervnc-standalone-server -y
 
 echo \"Baixando Java 11\"
 sudo apt install default-jre
-sudo apt install openjdk-11-jre-headlwss
+sudo apt install openjdk-11-jre-headless
 
 docker --version
 if [ $? -eq 0 ]
