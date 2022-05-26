@@ -51,5 +51,3 @@ EOF
 sudo docker build . -t executable_quatro-jar
 
 sudo docker run -it executable_quatro-jar
-
-sudo docker exec -it executable_quatro-jar bash
