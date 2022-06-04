@@ -6,7 +6,8 @@ create database 4four;
 
 use 4four;
 
-TABELA PARA AS MEDIÇÕES
+
+---TABELA PARA AS MEDIÇÕES
 
 create table dbo_measurement(
 id_measurement int primary key auto_increment,
@@ -18,7 +19,9 @@ temperature_unit varchar(20),
 fk_component int
 )auto_increment = 100;
 
-TABELA PARA OS SERVIDORES
+
+---TABELA PARA OS SERVIDORES
+
  create table dbo_server (
  id_server int auto_increment, 
  server_name varchar(100), 
@@ -29,7 +32,8 @@ TABELA PARA OS SERVIDORES
  primary key (id_server));
 
 
-TABELA PARA OS COMPONENTES
+---TABELA PARA OS COMPONENTES
+
 create table dbo_component (
 id_component int, 
 item varchar(200), 
